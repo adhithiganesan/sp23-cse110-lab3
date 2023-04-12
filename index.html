@@ -79,7 +79,6 @@
             </summary>
         </details>
 
-        <section> 
             <form>
                 <fieldset>
                   <legend>Team Member Info</legend>
@@ -88,17 +87,19 @@
                   <label for="date"> Date: </label>
                   <input type="date" id="date" name="date">
                   <label for="message">Message:</label>
-                  <input type="textarea" id="message" name="message">
+                  <textarea id="message" name="message"></textarea>
 
-                  <label for="Availability">What day of the week works best to meet?</label>
-                  <input list="days">
-                <datalist id="days">
+
+                <label for="availability-input">What is your availability?</label>
+                <input type="text" id="availability-input" name="availability"> 
+                <datalist id="availability-list">
                     <option value="Monday">
                     <option value="Tuesday">
                     <option value="Wednesday">
                     <option value="Thursday">
                     <option value="Friday">
                 </datalist>
+                  
 
                 <br>
                 <label for="question">Do you like eggs?</label>
@@ -123,12 +124,10 @@
             </fieldset>
             </form>
               
-        </section>
     </main>
 
-
+    <footer>
+        This website was made with love.
+    </footer>
   </body>
-  <footer>
-    This website was made with love <3.
-  </footer>
 </html>
