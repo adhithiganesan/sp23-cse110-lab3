@@ -1,0 +1,93 @@
+/* This is a comment. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); 
+
+*{
+    text-decoration: none;
+}
+head{
+    background-color: whitesmoke;
+}
+h1{
+    color: blue;
+    font-size: xx-large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h2{
+    font-size: x-large;
+    margin: auto;
+    display: block;
+    height: 50%;
+    width: 50%;
+}
+h3{
+    font-size: x-large;
+    margin: 10px 10px 10px 10px;
+    display: none;
+}
+h1,h2,h3{
+    font-style: normal;
+}
+h3.highlight{
+    background-color: aquamarine;
+}
+body{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div body{
+    font-style: none;
+}
+div > body{
+    font-style: none;
+}
+main ~p {
+    font-style: none;
+}
+main + p{
+    font-style: none;
+}
+main{
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+}
+.container{
+    flex: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    display: grid;
+    grid-area: auto;
+    grid-template-columns: none;
+}
+:hover{
+    font-weight: bold;
+}
+:active{
+    font-weight: bold;
+}
+.h1{
+    text-decoration: underline;
+}
+#h2{
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+}
+input[type="text"] {
+    background-color: whitesmoke;
+}
+  
+@media screen and (max-width: 640px){
+    nav{
+        font-size: x-small;
+        flex-direction: column;
+    }  
+    div.catStyling-container{
+        flex-direction: column;     
+    } 
+}
